@@ -1,0 +1,191 @@
+body{
+
+  background: linear-gradient(to bottom left,rgb(30, 38, 152), rgb(24, 142, 185));
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.login {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 935.52px;
+  height: 664.4px;
+}
+
+.crnakocka {
+  position: relative;
+}
+
+.crnakocka::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 119, 255, 0.494);
+  animation: ripple 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    width: 200%;
+    padding-bottom: 200%;
+    opacity: 0;
+  }
+}
+
+.crnakocka {
+  position: absolute;
+  width: 448.46px; 
+  height: 409.66px; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom left,rgb(6, 7, 28), rgb(7, 48, 63));
+  border-radius: 32.88px;
+ 
+  line-height: 54px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.764);
+}
+
+
+.slika {
+  position: absolute;
+ height: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120.6px;
+
+}
+
+.email {
+  position: absolute;
+  width: 212.1px;
+  height: 12.24px;
+  left: 354.72px;
+  top: 280.92px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16.61px;
+  line-height: 20.47px;
+
+}
+
+.lozinka {
+  color: rgb(255, 255, 255);
+
+  position: absolute;
+  width: 168.53px;
+  height: 12.24px;
+  left: 354.72px;
+  top: 387.4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16.61px;
+  line-height: 20.47px;
+}
+
+.formeupisemail {
+  padding: 0 10px;
+  position: absolute;
+  width: 248.82px; 
+  height: 39.84px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 320.92px;
+  background: linear-gradient(to bottom right,rgba(30, 38, 152, 0.345), rgba(24, 142, 185, 0.279));
+  box-shadow: 0px 4px 15px #0000004c;
+    overflow: hidden;
+      border-radius: 58.79px;
+border: none;
+  font-size: 14px;
+}
+
+.formeupislozinka {
+  padding: 0 10px;
+  position: absolute;
+  width: 248.82px; 
+  height: 39.84px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 427.4px;
+
+  border-radius: 58.79px;
+  border:none;
+  box-shadow: 0px 4px 15px #0000004c;
+  font-size: 14px;
+    background: linear-gradient(to bottom left,rgba(30, 38, 152, 0.345), rgba(24, 142, 185, 0.279));
+ 
+    overflow: hidden;
+}
+
+input:focus {
+  outline: none;
+}
+.btn-primary {
+  position: absolute;
+  left: 50%;
+  top: calc(70% + 25px);
+  transform: translateX(-50%);
+  text-align: center;
+  width: 20%;
+  background: transparent;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20.47px;
+border: none;
+transition: color 0.3s ease;
+}
+.btn-primary:hover {
+  color: #1a2a73;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #C21B67;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+.login {
+  opacity: 0;
+ 
+  animation: fade-in 1s ease-in-out forwards;
+}
+.slika{
+  opacity: 0;
+ 
+  animation: fade-in 2s ease-in-out forwards;
+}
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
